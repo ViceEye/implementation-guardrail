@@ -1,0 +1,20 @@
+{
+  "name": "viceeye",
+  "interface": {
+    "displayName": "ViceEye"
+  },
+  "plugins": [
+    {
+      "name": "implementation-guardrail",
+      "source": {
+        "source": "local",
+        "path": "./plugins/implementation-guardrail"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

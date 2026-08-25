@@ -1,0 +1,7 @@
+interface:
+  display_name: "Implementation Guardrail"
+  short_description: "Keep implementation scoped and review-gated"
+  default_prompt: "Use $implementation-guardrail to implement the approved design and stop after static review."
+
+policy:
+  allow_implicit_invocation: false

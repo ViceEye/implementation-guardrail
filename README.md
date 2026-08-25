@@ -38,13 +38,44 @@ skip testing permanently.
 
 ## Install
 
-Clone the repository into your Codex skills directory:
+### One-Line Install
+
+Install globally for Codex with the Agent Skills CLI:
+
+```powershell
+npx skills add ViceEye/implementation-guardrail --skill implementation-guardrail -g -a codex -y
+```
+
+No global package install is required. Restart Codex after installation.
+
+Update or remove it later:
+
+```powershell
+npx skills update implementation-guardrail -g -y
+npx skills remove implementation-guardrail -g -a codex -y
+```
+
+### Codex Plugin
+
+The repository also ships as a skill-only Codex plugin and local marketplace:
+
+```powershell
+git clone https://github.com/ViceEye/implementation-guardrail.git
+codex plugin marketplace add ./implementation-guardrail
+codex plugin add implementation-guardrail@viceeye
+```
+
+Start a new Codex conversation after installation so the plugin is loaded.
+
+### Manual Install
+
+Alternatively, clone directly into the Codex skills directory:
 
 ```powershell
 git clone https://github.com/ViceEye/implementation-guardrail.git "$HOME/.codex/skills/implementation-guardrail"
 ```
 
-Restart Codex after installation. The skill is explicit-only by default.
+The skill is explicit-only by default.
 
 ## In-Codex Modes
 

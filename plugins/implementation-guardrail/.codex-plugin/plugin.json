@@ -1,0 +1,37 @@
+{
+  "name": "implementation-guardrail",
+  "version": "1.0.0",
+  "description": "Keep implementation scoped and stop before autonomous validation.",
+  "author": {
+    "name": "ViceEye",
+    "url": "https://github.com/ViceEye"
+  },
+  "homepage": "https://github.com/ViceEye/implementation-guardrail#readme",
+  "repository": "https://github.com/ViceEye/implementation-guardrail",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "codex-skill",
+    "ai-agent",
+    "guardrails",
+    "workflow"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Implementation Guardrail",
+    "shortDescription": "Stop after scoped implementation and static review.",
+    "longDescription": "Keep Codex focused on approved implementation work, perform static review, and return validation control to the user.",
+    "developerName": "ViceEye",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/ViceEye/implementation-guardrail",
+    "defaultPrompt": [
+      "Implement this approved design and stop before testing.",
+      "Enable implementation guardrail for this conversation.",
+      "Show implementation guardrail status."
+    ]
+  }
+}
