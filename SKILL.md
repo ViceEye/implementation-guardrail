@@ -9,6 +9,26 @@ description: >
 
 # Implementation Guardrail
 
+## Invocation Modes
+
+Default mode: **off**.
+
+- No argument: apply the guardrail to the current request only. Do not keep it
+  active for later turns.
+- `on` or `auto`: keep the guardrail active for matching implementation work in
+  this conversation until the user selects `off`.
+- `off`: disable persistent guardrail mode and return to the normal workflow.
+  Do not start deferred testing unless the user requests it.
+- `status`: report the current mode without performing implementation work.
+
+Treat `$implementation-guardrail on`, `$implementation-guardrail auto`,
+`$implementation-guardrail off`, and `$implementation-guardrail status` as
+mode commands.
+
+Persistent modes apply only to the current conversation. A new conversation
+uses the installed invocation policy. Do not infer persistence from a previous
+one-shot invocation.
+
 ## Purpose
 
 Implement an already-defined design completely while deliberately stopping

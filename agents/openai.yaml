@@ -4,4 +4,4 @@ interface:
   default_prompt: "Use $implementation-guardrail to implement the approved design and stop after static review."
 
 policy:
-  allow_implicit_invocation: true
+  allow_implicit_invocation: false
