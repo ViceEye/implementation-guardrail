@@ -1,8 +1,7 @@
-# Implement Before Testing
+# Implementation Guardrail
 
-A Codex skill for a deliberate two-phase workflow: finish an approved
-implementation first, then wait for human review before running tests or other
-runtime validation.
+A Codex skill that keeps implementation scoped and controlled: finish the
+approved work, then wait for human review before testing or runtime validation.
 
 ## What It Does
 
@@ -20,16 +19,16 @@ skip testing permanently.
 Clone the repository into your Codex skills directory:
 
 ```powershell
-git clone https://github.com/ViceEye/implement-before-testing.git "$HOME/.codex/skills/implement-before-testing"
+git clone https://github.com/ViceEye/implementation-guardrail.git "$HOME/.codex/skills/implementation-guardrail"
 ```
 
 Restart Codex after installation. The skill can be selected automatically from
-matching requests or invoked explicitly as `$implement-before-testing`.
+matching requests or invoked explicitly as `$implementation-guardrail`.
 
 ## Example
 
 ```text
-Use $implement-before-testing to implement the approved pagination design.
+Use $implementation-guardrail to implement the approved pagination design.
 Stop after static review so I can inspect the diff before tests run.
 ```
 
